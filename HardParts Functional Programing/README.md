@@ -23,3 +23,10 @@ function myFunc(){
 ```
 Local scope can be devided into function scope and block scope.
 The concept of block scope introduced in ECMA script 6 (ES6) together with the new ways to declare variables -- const and let
+```
+
+## Functional scope
+- whenever u declared a variable in a function, the variable is visible only within the function. u cant access it outside the function. var is the keyword to define variable for a function scope accessebility.
+
+## Block scope
+- A block scope is the area within if-else , switch conditions or for and while loops. whenever u see {} ,it is a block. IN ES6 -- const and let keywords is allow to delopers to declare varaibles in the block scope, which means those varaibles exist only within the corresponding block. 
