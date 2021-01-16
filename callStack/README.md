@@ -15,3 +15,10 @@ js engine uses a call stack to manage execution contexts (Global and Functional)
 - when the current function completes , the js engine pops it off the call stack.
 
 - the script eill stop when the call stacj is empty.
+
+## Stack Overflow
+
+```
+The call stack is fixed size depending on the implementation of the host env. either web browser or nodeJS. if the number of the exection contexts exceedes the size of the stack , a stack overflow is occurs.
+eg. when you execute recursive call without base condition , it will result in stack overflow error
+```
