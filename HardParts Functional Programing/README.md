@@ -19,3 +19,7 @@ function myFunc(){
 }
 
 // name become a global variable automatically and can accessebile outside the myFunct function.
+
+```
+Local scope can be devided into function scope and block scope.
+The concept of block scope introduced in ECMA script 6 (ES6) together with the new ways to declare variables -- const and let
