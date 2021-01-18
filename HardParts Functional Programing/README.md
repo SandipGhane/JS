@@ -30,3 +30,7 @@ The concept of block scope introduced in ECMA script 6 (ES6) together with the n
 
 ## Block scope
 - A block scope is the area within if-else , switch conditions or for and while loops. whenever u see {} ,it is a block. IN ES6 -- const and let keywords is allow to delopers to declare varaibles in the block scope, which means those varaibles exist only within the corresponding block. 
+
+
+## Lexical Scoping
+- 
