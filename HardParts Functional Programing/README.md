@@ -33,4 +33,4 @@ The concept of block scope introduced in ECMA script 6 (ES6) together with the n
 
 
 ## Lexical Scoping
-- 
+- JS has lexical scoping with function scope.In other words , even through js look likeit should have block scope becuse it uses {} braces. new scope is created when u create a new function.
