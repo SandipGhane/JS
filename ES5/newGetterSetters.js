@@ -24,3 +24,20 @@ obj.RunWhenAccessed;
 // obj.a;
 obj.RunsWhenSets = 'Sandy';
 console.log(obj.a());
+
+
+var person = {
+    firstName : '',
+    lastName : '',
+    get name(){
+        return this.firstName+ " "+this.lastName;
+    },
+    set name(str){
+        var n = str.split(" ");
+        this.firstName = n.shift();
+        this.lastName = n.join();
+        console.log(this.lastName);
+    }
+}
+person.name = 'Sandip Ghane';
+console.log(person.name);
