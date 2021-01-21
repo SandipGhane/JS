@@ -82,3 +82,11 @@ var newMappingArray = myArray.map((value)=>{
 console.log(newMappingArray);
 console.log(myArray);
 
+//reduce
+//The reduce method runs a function that passes the return value to the next iteration
+//of the function using values of the array from left to right and returning final value.
+var resultValue = myArray.reduce((prev,next)=>{
+    console.log("Prev=>",prev,"Next=>",next);
+    return prev + next;
+},10)
+console.log("result",resultValue);
