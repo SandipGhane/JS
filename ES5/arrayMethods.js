@@ -90,3 +90,8 @@ var resultValue = myArray.reduce((prev,next)=>{
     return prev + next;
 },10)
 console.log("result",resultValue);
+
+//reduceRight
+//This method runs a functionthat passes the return value to the next iteration of the
+//function using values in the array from right to left and returning final value
+
