@@ -29,3 +29,12 @@ console.log([1,2,3,4,5].every((value)=>{
 }));
 //Check every items in array are bigger than 1 then every function returns true.
 // every function check every item in array with given conditions.and then returns true  or false.
+
+
+//filter 
+// The filter() ,method will return a new array containing all the values that pass the filtering test.
+var myArray = [1,2,3,4,5,6,7,8,9];
+var filterArray = myArray.filter((value)=>{
+    return value>=6;
+})
+console.log(filterArray);
