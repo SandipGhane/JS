@@ -67,3 +67,18 @@ console.log(myArray);
 //if given values not found in the given array then indexOf returns -1;
 
 console.log(myArray.indexOf('cat'));
+
+//lastIndexOf
+// this method searches an array of the last value matching the value passed to the 
+// lastIndexOf . and returns index of the value.
+
+//map
+// The map method executes a provided function for each value in the array,
+// and returns the results in a new array
+
+var newMappingArray = myArray.map((value)=>{
+    return value+99;
+})
+console.log(newMappingArray);
+console.log(myArray);
+
