@@ -27,4 +27,5 @@ console.log([1,2,3,4].some((value)=>{
 console.log([1,2,3,4,5].every((value)=>{
     return value>=1;
 }));
-
+//Check every items in array are bigger than 1 then every function returns true.
+// every function check every item in array with given conditions.and then returns true  or false.
