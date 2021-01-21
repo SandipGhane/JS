@@ -60,3 +60,10 @@ function forEachDemo(){
 forEachDemo();
 
 console.log(myArray);
+
+//indexOf
+// thos method searches an array for the first value matching the value passed to indexOf and return
+// index of the given value.
+//if given values not found in the given array then indexOf returns -1;
+
+console.log(myArray.indexOf('cat'));
