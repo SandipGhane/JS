@@ -80,26 +80,26 @@
 
 //bind() method returns a new function , when invoked ,has its this sets to specific value.
 
-// let person = {
-//     name:'Sandip Ghane',
-//     getName : function(){
-//         console.log(this.name);
-//     }
-// };
+let person = {
+    name:'Sandip Ghane',
+    getName : function(){
+        console.log(this.name);
+    }
+};
 
-// setTimeout(person.getName.bind(person),1000);
+setTimeout(person.getName.bind(person),1000);
 
 // //Using bind() to borrow methods from different objects.
 
-// var myObj = {
-//     name:'sandip'
-// };
-// var greeting = function(){
-//     console.log(this.name);
-// }
-// var bindGreeting = greeting.bind(myObj);
-// bindGreeting();
-// console.log(myObj);
+var myObj = {
+    name:'sandip'
+};
+var greeting = function(){
+    console.log(this.name);
+}
+var bindGreeting = greeting.bind(myObj);
+bindGreeting();
+console.log(myObj);
 
 //Using bind to borrow methods from different objects.
 
