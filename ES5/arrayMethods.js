@@ -18,7 +18,13 @@ reduceRigth
 // var everyMethod = [1,2,3,4].every((value)=>{
 //     value>=0
 // })
-console.log([1,2,3,4].every((value)=>{
+console.log([1,2,3,4].some((value)=>{
     return value>1
+}));
+
+// The some method will start testing values in array ,until a test return true , then the function passed to .some() returns true ,ow the function returns falase.
+
+console.log([1,2,3,4,5].every((value)=>{
+    return value>=1;
 }));
 
