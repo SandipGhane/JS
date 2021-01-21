@@ -38,3 +38,25 @@ var filterArray = myArray.filter((value)=>{
     return value>=6;
 })
 console.log(filterArray);
+
+//filter returns new array old array still as it is.
+
+//[].forEach()
+// forEach method executes a provided function for each value in the array.
+
+function forEachDemo(){
+    var myArray = ["dog",2,3,"cat",5,6];
+    myArray.forEach((value,i)=>{
+        console.log(i,"=>",value);
+    })
+    console.log(myArray);
+    if(true){
+        let a=10;
+        console.log(a); 
+    }
+    const a=5;
+    console.log(a);
+}
+forEachDemo();
+
+console.log(myArray);
