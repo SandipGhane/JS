@@ -19,7 +19,7 @@ console.log(obj);
 // this method will take Array-like values (Objects with the length property and index values)
 // or iterable values and convert them into array values.
 //iterable values(String , array , TypedArray , Map and Set).
-
+//creates a new shadow-copied array
 const myArray = Array.from({length:2,0:'zero',1:'one'});
 console.log(myArray);
 
@@ -29,3 +29,10 @@ console.log(array);
 
 const array2 = Array.from([1,2,3],item => item*item);
 console.log(array2);
+
+
+//Array.of() 
+// this is static method creates an  array from arguments.
+
+console.log(Array.of(5,3,4));
+console.log(Array.of(5,{},undefined));
