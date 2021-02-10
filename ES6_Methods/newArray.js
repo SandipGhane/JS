@@ -30,3 +30,11 @@ var everyResult = [2, 4, 6, 8, 10].every((value) => {
     return value % 2 !== 0;
 })
 console.log('Every-', everyResult);
+
+// 4. [].filter() - new Array
+// This method will return a new array containing all values that pass through filter test.
+
+var filterArray = [1, 2, 3, 4, 5, 6, 7, 8].filter((value) => {
+    return value % 2 === 0
+})
+console.log('Filter -', filterArray);
