@@ -78,3 +78,21 @@ var reduceArrayValue = [1, 2, 3, 4, 5, 6].reduce((returningValueEachItr, value) 
 console.log('Reduce-Passing-default', reduceArrayValue);
 
 // we have also passed default value for the returningValueEachItr
+
+
+// 9. reduceRight()
+// The[].reduceRight() method runs a function that passes the return value to the next iteration of the function using values in the array from right to left and returning a final value.
+// add up numbers in array from left to right i.e. (((2+5) +5 ) + 5)
+var reduceRightMethod = [5, 5, 5, 2].reduceRight(function (accumulator, value, valueIndex, wholeArray) {
+    return accumulator + value;
+});
+console.log(reduceRightMethod) // logs 17
+
+/** reduce also accepts a second parameter that sets the first accumulator value, 
+instead of using the first value in the array. **/
+
+// add up numbers in array from left to right, but start at 10 i.e. ((((10+2) + 5 ) +5 ) + 5)
+var reduceRightMethod = [5, 5, 5, 2].reduceRight(function (accumulator, value, valueIndex, wholeArray) {
+    return accumulator + value; // first iteration of func accumulator is 10 not 5
+}, 10);
+console.log(reduceRightMethod) // logs 27
