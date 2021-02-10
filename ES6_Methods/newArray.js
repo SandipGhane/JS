@@ -38,3 +38,11 @@ var filterArray = [1, 2, 3, 4, 5, 6, 7, 8].filter((value) => {
     return value % 2 === 0
 })
 console.log('Filter -', filterArray);
+
+// 4.forEach()
+// This method executes a provided function for each value in array.
+
+var forE = [1, 2, 3, 4, 5].forEach((value) => {
+    console.log(value * 2);
+})
+// console.log('ForEach -', forE);
