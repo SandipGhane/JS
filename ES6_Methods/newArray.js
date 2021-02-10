@@ -46,3 +46,8 @@ var forE = [1, 2, 3, 4, 5].forEach((value) => {
     console.log(value * 2);
 })
 // console.log('ForEach -', forE);
+
+// 5. indexOf()
+// This method search provided value in whole array and returns index of this first found value.
+// if not found returns -1
+console.log([1, 2, 3, 4, 5].indexOf(1));
