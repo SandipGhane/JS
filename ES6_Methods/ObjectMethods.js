@@ -49,12 +49,24 @@ console.log('Object', obj);
 /*
     value : contains the property's value;
     writable: contains a boolean indicating wheather the value of a property can be changes pr written too
+            The ability for u to change the value of a property is controlled by writable.
+            if u use strict mode then compiler gets an TypeError
     get : reference to the function that is called when a property is read.
     set : reference to the function that is called when a property is set to a value.
     configurable : contains a boolean indicating wheather a property can have its attributes changed and deleted.
+                    if set configurable false then u cant redefine project attribute descriptor properties.
     enumerable : contains a boolean indicating if a property will show up on certain operations.
 */
-obj.prop2 = 'kiran';
-delete prop2;
-obj.prop3 = 'sandip';
-console.log('Object', obj);
+// obj.prop2 = 'kiran';
+// obj.prop2 = 'sandip';
+// delete obj.prop2;
+// console.log('Object', obj);
+
+// Object.defineProperty(obj, 'prop2', {
+//     value: 'value2',
+//     writable: false,
+//     enumerable: false,
+//     configurable: false,
+// })
+
+console.log('configurable false', Object.getOwnPropertyDescriptor(obj, 'prop1'));
