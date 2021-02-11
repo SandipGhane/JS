@@ -113,3 +113,8 @@ console.log('Object Seal', objSeal);
 Object.freeze(objSeal)
 objSeal.val = 'make change';
 console.log('Object Freeze', objSeal);
+
+
+// Object.isExtensible(): Boolean check if an object is extensible.
+// Object.isSealed(): Boolean checking if an object is sealed.
+// Object.isFrozen(): Boolean checking if an object is frozen.
