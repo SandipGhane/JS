@@ -96,3 +96,43 @@ var reduceRightMethod = [5, 5, 5, 2].reduceRight(function (accumulator, value, v
     return accumulator + value; // first iteration of func accumulator is 10 not 5
 }, 10);
 console.log(reduceRightMethod) // logs 27
+
+
+// 10. Array.from()
+// Array from Array like values.
+
+console.log('Array from-', Array.from({ length: 2, 0: 1, 1: 2 }));
+console.log('Arrat from strings', Array.from('sandip ghane'));
+console.log('Array from Array', Array.from([1, 2, 3]));
+
+console.log('Array with updating values', Array.from([1, 2, 3], i => i * i));
+
+
+// New Array methods
+
+// 1 [].findindex();
+// find index of the target element and returns
+console.log('indexOf', [1, 2, 3, 45, 5].indexOf(45)); // logs - 3
+// console.log('indexOf with condition', [1, 2, 3, 4, 5].indexOf((item) => { return item >= 4 }))
+
+// 2 [].find()
+// find and returns the first value of the given array that passed through given condition
+console.log('find method', [1, 2, 3, 4, 5, 6].find(item => item > 2)); //logs 3
+
+// 3. [].includes - boolean result return
+// find target element in array and returns T/F result
+console.log('includes -', [1, 2, 6, 8, 45].includes(45)); // logs true
+
+// 4 - [].keys() returns keys of the array in Array iterator object
+console.log('Keys', [2, 3, 4, 5, 6].keys()); //logs [Array Iterator] {}
+var arr = [1, 2, 6];
+var itr = arr.keys();
+// console.log('itr1', itr.next());
+// console.log('itr2', itr.next());
+// console.log('itr3', itr.next());
+// console.log('itr4', itr.next());
+
+// 5 - [].values() returns a values of the array in array iterator object;
+console.log('vlaues', [1, 2, 3, 4, 5].values()); //logs [Array Iterator] {}
+// 6- [].entries() returns a values of the array in key-values iterator object manner
+console.log('entries', [1, 2, 3, 4].entries()); // logs [Array Iterator] {}
