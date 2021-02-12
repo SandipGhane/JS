@@ -113,7 +113,7 @@ console.log('Object Seal', objSeal);
 Object.freeze(objSeal)
 objSeal.val = 'make change';
 console.log('Object Freeze', objSeal);
-consloe.log('Check object sealed or not',Object.isSealed(objSeal));
+// consloe.log('Check object sealed or not', Object.isSealed(objSeal));
 // logs - true
 
 
@@ -122,3 +122,54 @@ consloe.log('Check object sealed or not',Object.isSealed(objSeal));
 // Object.isSealed()
 //check object is sealed or not
 // Object.isFrozen(): Boolean checking if an object is frozen.
+
+
+
+
+// New object methods
+// Object.is() - checks 2 objects and returns true if objects are same ow returns false
+// also compare primitives values
+const o = {
+
+}
+console.log(Object.is(o, o));//logs true
+console.log(Object.is(o, { key: 1 }));// logs false
+
+
+// Object.values()
+// returns an array of enumerable property values
+var xObj = {
+    name: 'sandip',
+    age: 21
+}
+console.log('Object values', Object.values(xObj));
+
+
+// Object entries - 
+// this method will return multidimentional array with key value pair
+
+console.log('Object Entries', Object.entries({
+    name: 'sandip',
+    age: 21,
+    email: 'sandiprghane@gmail.com'
+}));
+// logs Object Entries [ [ 'name', 'sandip' ],[ 'age', 21 ],  [ 'email', 'sandiprghane@gmail.com' ] ]
+
+// Object.assign
+// this method copies own enumerable properties from one object to target object
+// same properties overwrite properties in new object
+var ass = {
+    x: 1,
+    y: 2,
+    z: 3
+}
+var p = {
+    x: 3,
+    j: 3,
+    p: 29
+}
+console.log(Object.assign(p, ass)); //{ x: 1, j: 3, p: 29, y: 2, z: 3 }
+
+// Object.assign() - String 
+console.log(Object.assign({}, 'sandip'));
+// { '0': 's', '1': 'a', '2': 'n', '3': 'd', '4': 'i', '5': 'p' }

@@ -136,3 +136,8 @@ var itr = arr.keys();
 console.log('vlaues', [1, 2, 3, 4, 5].values()); //logs [Array Iterator] {}
 // 6- [].entries() returns a values of the array in key-values iterator object manner
 console.log('entries', [1, 2, 3, 4].entries()); // logs [Array Iterator] {}
+
+// 7- [].fill()
+// fill array of 1 values , array size is given by 1st argument .
+console.log('fill', Array(2).fill(1));// logs [1,1]
+console.log([5, 5, 5, 5].fill('foo', 2)) // logs [5, 5, "foo", "foo"]
