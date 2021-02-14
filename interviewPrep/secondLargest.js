@@ -14,3 +14,7 @@ function secondLargest(arr) {
     return secondLargest;
 }
 console.log(secondLargest(arr));
+
+var a = '42'
+var b = Number(a);
+console.log(b.toString(2));
